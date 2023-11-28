@@ -2,6 +2,6 @@ import job from "./job";
 import profile from "./profile";
 import project from "./project";
 import blog from './blog';
-import author from './author';
+// import comments from "./comments";
 
-export const schemaTypes = [profile, job, project, blog, author];
+export const schemaTypes = [profile, job, project, blog];

@@ -5,20 +5,23 @@ import type { BlogType } from "@/types";
 
 export default async function Project() {
   const blogs: BlogType[] = await getBlogs();
-  console.log(blogs)
+  // console.log(blogs)
 
   return (
-    <main className="max-w-7xl mx-auto md:px-16 px-6">
-      <section className="max-w-2xl mb-16">
+    <main
+      className="max-w-7xl mx-auto md:px-16 px-6"
+    >
+      <section
+        className="max-w-2xl mb-10"
+      >
         <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight">
-          Featured projects I&apos;ve built over the years
+          Blogs
         </h1>
         <p className="text-base text-zinc-400 leading-relaxed">
-          I&apos;ve worked on tons of little projects over the years but these
-          are the ones that I&apos;m most proud of. Many of them are
-          open-source, so if you see something that piques your interest, check
-          out the code and contribute if you have ideas for how it can be
-          improved.
+          Explore Shubhjeet&apos;s dynamic blog for a captivating journey through the world of Technology.
+          From insightful industry perspectives to practical tips, each post is a burst of wisdom.
+          Engage with a vibrant community, share thoughts, and delve into an immersive experience. Join me on this adventure—where knowledge meets creativity, and curiosity is the compass.
+          Let the exploration ignite your passion!
         </p>
       </section>
 
@@ -29,19 +32,12 @@ export default async function Project() {
             key={blog._id}
             className="flex items-center gap-x-4 bg-[#1d1d20] border border-transparent hover:border-zinc-700 p-4 rounded-lg ease-in-out"
           >
-            {blog.blogthumbnail && 
-              <Image
-              src={blog?.blogthumbnail}
-              width={60}
-              height={60}
-              alt={blog?.title}
-              className="bg-zinc-800 rounded-md p-2"
-            />
-            }
-            
-            <div>
-              <h2 className="font-semibold mb-1">{blog?.title}</h2>
-              <div className="text-sm text-zinc-400">{blog?.metadesc}</div>
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <Image className="rounded-t-lg" width={400} height={200} src={blog?.blogthumbnail} alt={blog?.title} />
+              <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{blog.title}</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{blog.metadesc}</p>
+              </div>
             </div>
           </Link>
         ))}

@@ -4,6 +4,7 @@ import { getSingleBlog } from "@/sanity/sanity.query";
 import type { BlogType } from "@/types";
 import { PortableText } from "@portabletext/react";
 // import fallBackImage from "@/public/project.png";
+// import Form from "../../components/global/Form";
 
 type Props = {
   params: {
@@ -33,11 +34,11 @@ export default async function Blog({ params }: Props) {
   const slug = params.blog;
   const blog: BlogType = await getSingleBlog(slug);
   // const src = {src: blog.blogImage?.image}
-  console.log(blog)
+  // console.log(blog)
 
   return (
     <main className="max-w-6xl mx-auto lg:px-16 px-8">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto mb-24">
         <div className="flex items-start justify-between mb-4">
           <h1 className="font-bold lg:text-5xl text-3xl lg:leading-tight mb-4">
             {blog.title}
@@ -55,6 +56,7 @@ export default async function Blog({ params }: Props) {
           <PortableText value={blog?.content} />
         </div>
       </div>
+      {/* <Form /> */}
     </main>
   );
 }
