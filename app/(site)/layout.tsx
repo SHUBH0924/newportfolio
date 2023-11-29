@@ -7,12 +7,12 @@ import Footer from "./components/global/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sanity Next.js Portfolio Site",
+  title: "Shubhjeet Paul | Portfolio",
   metadataBase: new URL("https://sanity-nextjs-site.vercel.app"),
-  description: "A personal portfolio site built with Sanity and Next.js",
+  description: "Portfolio which describes the ability of mine.",
   openGraph: {
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1689893059/docs/og.png",
+      "https://res.cloudinary.com/dttbrpv4b/image/upload/v1701247393/Shubhjeet_Paul_l8zsrd.png",
   },
 };
 

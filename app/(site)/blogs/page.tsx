@@ -18,9 +18,7 @@ export default async function Project() {
           Blogs
         </h1>
         <p className="text-base text-zinc-400 leading-relaxed">
-          Explore Shubhjeet&apos;s dynamic blog for a captivating journey through the world of Technology.
-          From insightful industry perspectives to practical tips, each post is a burst of wisdom.
-          Engage with a vibrant community, share thoughts, and delve into an immersive experience. Join me on this adventure—where knowledge meets creativity, and curiosity is the compass.
+          Join me on this adventure—where knowledge meets creativity, and curiosity is the compass.
           Let the exploration ignite your passion!
         </p>
       </section>

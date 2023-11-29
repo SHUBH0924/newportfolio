@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       images:
         blog.blogImage?.image ||
-        "https://res.cloudinary.com/victoreke/image/upload/v1689892912/docs/project.png",
+        "https://res.cloudinary.com/dttbrpv4b/image/upload/v1701247549/blogs_egov0m.png",
       title: blog.title,
       description: blog.metadesc,
     },
