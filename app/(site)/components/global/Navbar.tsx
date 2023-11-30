@@ -35,14 +35,14 @@ export default function Navbar() {
                 Projects
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/blogs"
                 className="hover:text-purple-400 duration-300"
               >
                 Blogs
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
