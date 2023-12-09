@@ -86,10 +86,10 @@ const profile = {
                     initialValue: "https://twitter.com/",
                 },
                 {
-                    name: "twitch",
-                    title: "Twitch URL",
+                    name: "medium",
+                    title: "Medium URL",
                     type: "url",
-                    initialValue: "https://twitch.com/",
+                    initialValue: "https://medium.com/",
                 },
             ],
             options: {
