@@ -9,7 +9,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Shubhjeet Paul | Portfolio",
   metadataBase: new URL("https://sanity-nextjs-site.vercel.app"),
-  description: "Portfolio which describes the ability of mine.",
+  description: "Hi there! I'm Shubhjeet, a passionate developer with experience in MERN stack and React Native",
+  verification:{
+    google: "tAKGxTQGX-uh-8c8WvJzc9sIvjrOWhMALcp2cE_iaLY",
+  },
+  keywords: [
+    "shubhjeet's resume", "shubhjeet best-freelancer", "shubhjeet Full-stack Developer", "best developer",
+    "portfolio of shubhjeet paul", 
+    "best software engineer","Kanpur", "Goa", "kolkata","best freelancer in US", "best developer in India", "shubhjeet paul", "software engineer",
+    "recent graduate"
+  ],
   openGraph: {
     images:
       "https://res.cloudinary.com/dttbrpv4b/image/upload/v1701247393/Shubhjeet_Paul_l8zsrd.png",
