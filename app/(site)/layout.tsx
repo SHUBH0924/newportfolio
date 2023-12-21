@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "shubhjeet's resume", "shubhjeet best-freelancer", "shubhjeet Full-stack Developer", "best developer",
     "portfolio of shubhjeet paul", 
     "best software engineer","Kanpur", "Goa", "kolkata","best freelancer in US", "best developer in India", "shubhjeet paul", "software engineer",
-    "recent graduate"
+    "recent graduate", "best web developer in kanpur", "Java Developer", "MERN developer", "web developer"
   ],
   openGraph: {
     images:
