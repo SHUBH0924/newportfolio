@@ -3,6 +3,7 @@ import type { ProfileType } from "@/types";
 import HeroSvg from "./icons/HeroSvg";
 import Job from "./components/Job";
 import Blog from "./components/Blog";
+import Topmate from "./components/topmate"
 
 export default async function Home() {
   const profile: ProfileType[] = await getProfile();
@@ -40,6 +41,7 @@ export default async function Home() {
       </section>
       <Job />
       <Blog />
+      <Topmate />
     </main>
   );
 }
