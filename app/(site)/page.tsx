@@ -4,7 +4,7 @@ import HeroSvg from "./icons/HeroSvg";
 import Job from "./components/Job";
 import Blog from "./components/Blog";
 import Topmate from "./components/Topmate"
-
+import { Analytics } from "@vercel/analytics/react"
 export default async function Home() {
   const profile: ProfileType[] = await getProfile();
 
@@ -42,6 +42,7 @@ export default async function Home() {
       <Job />
       <Blog />
       <Topmate />
+      <Analytics/>
     </main>
   );
 }
