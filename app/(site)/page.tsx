@@ -3,7 +3,7 @@ import type { ProfileType } from "@/types";
 import HeroSvg from "./icons/HeroSvg";
 import Job from "./components/Job";
 import Blog from "./components/Blog";
-import Topmate from "./components/topmate"
+import Topmate from "./components/Topmate"
 
 export default async function Home() {
   const profile: ProfileType[] = await getProfile();
