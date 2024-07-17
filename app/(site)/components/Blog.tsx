@@ -12,7 +12,7 @@ export default async function Blog() {
         <h2 className="font-semibold text-4xl mb-4">Blogs</h2>
       </div>
 
-      <div className="flex flex-col gap-y-12">
+      <div className="flex flex-col gap-x-12">
         {blog.map((data) => (
           <div
             key={data._id}
@@ -33,10 +33,6 @@ export default async function Blog() {
             <div className="flex flex-col items-start">
               <h3 className="text-xl font-bold">{data.title}</h3>
               <p>{data.metadesc}</p>
-              {/* <small className="text-sm text-zinc-500 mt-2 tracking-widest uppercase">
-                {data.startDate.toString()} - {data.endDate.toString()}
-              </small> */}
-              {/* <p className="text-base text-zinc-400 my-4">{data.description}</p> */}
             </div>
           </div>
         ))}
